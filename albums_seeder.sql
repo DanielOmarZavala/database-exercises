@@ -1,5 +1,7 @@
 use codeup_test_db;
 
+truncate table albums;
+
 insert into albums(artist, name, release_date, genre, sales)
 values ('Michael Jackson', 'Thriller', 1982, 'Pop, post-disco, funk, rock', 50.2),
        ('AC/DC', 'Back in Black', 1980, 'Hard rock', 29.5),
@@ -32,8 +34,5 @@ values ('Michael Jackson', 'Thriller', 1982, 'Pop, post-disco, funk, rock', 50.2
        ('Santana', 'Supernatural', 1999, 'Latin rock', 20.5),
        ('Guns N'' Roses', 'Appetite for Destruction', 1987, 'Hard rock', 21.9),
        ('Elton John', 'Goodbye Yellow Brick Road', 1973, 'rock, pop rock, glam rock', 8.5);
-
-select * from albums;
-delete from albums where id > 0;
 
 select * from albums;
