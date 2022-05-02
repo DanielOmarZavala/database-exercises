@@ -14,7 +14,7 @@ where artist = 'Nirvana';
 
 select name
 from albums
-where release_date > 1990 && albums.release_date < 2000;
+where release_date > 1990 && release_date < 2000;
 
 select name
 from albums
